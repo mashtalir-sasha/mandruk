@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Приватний садок на Караваєвих Дачах для дітей від 2 до 6 років з щоденною англійською та безмежною творчістю</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<link rel="stylesheet" href="test/style.css">
+	<link rel="stylesheet" href="test/libs/jquery-ui-slider/jquery-ui.css">
+	<script src="test/libs/jquery-3.2.1.min.js"></script>
+	<script src="test/libs/jquery.bxslider.min.js"></script>
+	<script src="test/libs/jquery.maskedinput.min.js"></script>
+	<script src="test/libs/is.mobile.js"></script>
+	<script src="test/libs/jquery.form.js"></script>
+	<script src="test/libs/jquery.validate.js"></script>
+	<script src="test/libs/jquery-ui-slider/jquery-ui.js"></script>
+
+</head>
+<body>
+<form class="portable-test-wrapper">
+	<input type="hidden" name="title" value="Відповіді на запитання">
+	<!-- LOGO + TITLE START -->
+	<div class="header-line">
+		<div class="form-container">
+			<img src="img/logo.png" alt="logo" class="header-line__logo">
+			<h2 class="header-line__title">
+				Дізнайтеся за 1 хвилину про ціни, програми<br>розвитку дитини, інфраструктуру<br>та безпеку в нашому садочку
+			</h2>
+		</div>
+	</div>
+	<!-- LOGO + TITLE END -->
+
+	<!-- PROGRESS LINE START -->
+	<div class="progress-line">
+		<div class="main-progress">
+			<div class="main-progress__extender"></div>
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Залишилось відповісти на 4 питання,</b> щоб дізнатись про ціни та програми
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Залишилось відповісти на 3 питання,</b> щоб дізнатись про ціни та програми
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Залишилось відповісти на 2 питання,</b> щоб дізнатись про ціни та програми
+			</div>
+			<!-- STEPS TEXT END -->
+<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Залишилось відповісти на 1 питання,</b> щоб дізнатись про ціни та програми
+			</div>
+			<!-- STEPS TEXT END -->
+			<!-- STEPS TEXT START -->
+			<div class="main-progress__text">
+				<b>Тест закінчений.</b> Заповніть форму нижче, щоб дізнатись про ціни та програми
+			</div>
+			<!-- STEPS TEXT END -->
+		</div>
+		<div class="form-container">
+			<div class="step">
+				<div class="step__text">Крок <span>1</span></div>
+				<div class="step__extender"></div>
+			</div>
+		</div>
+	</div>
+	<!-- PROGRESS LINE END -->
+
+	<!-- STEPS START -->
+	<div class="form-container">
+		<div class="test-slider">
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-1">
+				<h3 class="step-slide__title">
+				Вкажіть дату народження Вашої дитини?
+				</h3>
+				<div class="step-slide__grid">
+					<input type="text" placeholder="ДД.ММ.РРРР" class="field age" name="step1">
+
+					<div id="next1" class="btn-next-container"></div>
+				</div>
+				<!-- <input type="hidden" class="hidden-input-1" name="step1"> -->
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-2">
+				<h3 class="step-slide__title">
+				На що Ви більше всього звертаєте увагу при виборі навчального закладу для Вашої дитини? (виберіть від 1 до 4 варіантів)
+				</h3>
+				<div class="step-slide__grid">
+
+					<!-- ONE-ITEM START -->
+					<label for="step2-1" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[1]" id="step2-1" value="Безпека на території навчального закладу">
+						<div class="pick-item__label">Безпека на території навчального закладу</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-2" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[2]" id="step2-2" value="Методологія навчання і розпорядок дня">
+						<div class="pick-item__label">Методологія навчання і розпорядок дня</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-3" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[3]" id="step2-3" value="Вивчення іноземних мов">
+						<div class="pick-item__label">Вивчення іноземних мов</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-4" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[4]" id="step2-4" value="Раціон харчування">
+						<div class="pick-item__label">Раціон харчування</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-5" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[5]" id="step2-5" value="Ціна за дитячий садок">
+						<div class="pick-item__label">Ціна за дитячий садок</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step2-6" class="pick-item">
+					    <input class="pick-item__input" type="checkbox" name="checkbox[6]" id="step2-6" value="Близькість навчального закладу від дому">
+						<div class="pick-item__label">Близькість навчального закладу від дому</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+
+					<div id="next2" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-2" name="step2">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-3">
+				<h3 class="step-slide__title">
+					Ваша дитина вже ходила в дитячий садочок?
+				</h3>
+				<div class="step-slide__grid">
+					<!-- ONE-ITEM START -->
+					<label for="step3-1" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step3" id="step3-1" value="Ні, ніколи">
+						<div class="pick-item__label">Ні, ніколи</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step3-2" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step3" id="step3-2" value="Так, але шукаємо кращий варіант">
+						<div class="pick-item__label">Так, але шукаємо кращий варіант</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+					<div id="next3" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-3" name="step3">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide step-slide-4">
+				<h3 class="step-slide__title">
+				Який графік перебування у дитячому садку Вам зручніше і більше підійде для дитини?
+				</h3>
+				<div class="step-slide__grid">
+
+					<!-- ONE-ITEM START -->
+					<label for="step4-1" class="pick-item">
+						<input class="pick-item__input" type="radio" name="step4" id="step4-1" value="Півдня (8:00-15:00 / 410 грн в день) ">
+						<div class="pick-item__label">Півдня (8:00-15:00 / 410 грн в день) </div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-2" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step4" id="step4-2" value="Повний день (8:00-19:00 / 613 грн в день)">
+						<div class="pick-item__label">Повний день (8:00-19:00 / 613 грн в день)</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					<!-- ONE-ITEM START -->
+					<label for="step4-3" class="pick-item">
+					    <input class="pick-item__input" type="radio" name="step4" id="step4-3" value="Хочу спробувати 1 пробний день (безкоштовно)">
+						<div class="pick-item__label">Хочу спробувати 1 пробний день (безкоштовно)</div>
+					</label>
+					<!-- ONE-ITEM END -->
+					
+					<div id="next4" class="btn-next-container"></div>
+				</div>
+				<input type="hidden" class="hidden-input-4" name="step4">
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide bg-mockup">
+				<h3 class="step-slide__title">
+					Дякуємо за Ваші відповіді! За Вашим номером телефону будуть закріплені:
+				</h3>
+				<div class="step-slide__grid">
+					<h4 class="step-slide__discount">· Докладні програми розвитку Вашої дитини. Ціни та розклад навчання<br>· Раціон харчування дитини протягом дня та сертифікати якості продуктів<br>· Інфраструктура безпеки дитини. Фото інтер'єру і екстер'єру навчального закладу</h4>
+					<div class="last-step-form">
+						<!-- <label class="last-step-form__label">Введите Ваше имя</label> -->
+						<input class="last-step-form__input" type="text" name="name" placeholder="Введіть Ваше ім'я" required style="background: #EFEFEF url(test/img/name.png) no-repeat left 20px center;">
+						<!-- <label class="last-step-form__label">Введите Ваш телефон</label> -->
+						<input class="last-step-form__input" type="text" name="phone" placeholder="Введіть Ваш телефон" required>
+						<button class="last-step-form__button btn-shine"><span>Отримати ціни, програми та методологію</span></button>
+						<div class="last-step-form__accept">Натискаючи на кнопку, ви приймаєте <a href="privacy.html" target="_blank">Положення та Згоду</a> на обробку персональних даних.</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- ONE-STEP END -->
+
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide">
+			</div>
+			<!-- ONE-STEP END -->
+
+			<!-- ONE-STEP START -->
+			<div class="step-slide last">
+				<!-- AFTER SUBMIT START -->
+				<div class="after-submit">
+					<div class="form-container">
+						<h4 class="after-submit__title">Дякуємо за Вашу заявку!</h4>
+						<h5 class="after-submit__descr">Наш фахівець протягом години зв'яжеться з Вами і розповість докладніше про навчальний заклад і методологію навчання</h5>
+					</div>
+				</div>
+				<!-- AFTER SUBMIT END -->
+			</div>
+			<!-- ONE-STEP END -->
+		</div>
+	</div>
+	<!-- STEPS END -->
+
+</form>
+
+<script src="test/main.js"></script>
+</body>
+</html>
