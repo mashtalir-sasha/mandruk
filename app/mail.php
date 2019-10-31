@@ -12,25 +12,25 @@
 	if(isset ($_POST['step3'])) {$step3=$_POST['step3'];}
 	if(isset ($_POST['step4'])) {$step4=$_POST['step4'];}
 
-	$to = "d.o.dikaya@gmail.com"; // Замениь на емаил клиента
+	$to = "mandryk.kiev@gmail.com"; // Замениь на емаил клиента
 
 	$message = "Форма: $title <br><br>";
 	if ( $fio || $phonenum || $step1 || $checkbox || $step3 || $step4 ) {
 		$message .= ""
-			. ( $fio ?" Імя:  $fio <br>" : "")
-			. ( $phonenum ?" Телефон:  $phonenum <br><br>" : "")
-			. ( $step1  ? " Вкажіть дату народження Вашої дитини?: $step1 <br>" : "")
+			. ( $fio ? "Імя: $fio <br>" : "")
+			. ( $phonenum ? "Телефон: $phonenum <br><br>" : "")
+			. ( $step1  ? "Вкажіть дату народження Вашої дитини?: $step1 <br>" : "")
 			. ( $checkbox  ? "На що Ви більше всього звертаєте увагу при виборі навчального закладу для Вашої дитини?: $checkbox <br>" : "")
-			. ( $step3  ? " Ваша дитина вже ходила в дитячий садочок?: $step3 <br>" : "")
-			. ( $step4  ? " Який графік перебування у дитячому садку Вам зручніше і більше підійде для дитини?: $step4 <br>" : "");
+			. ( $step3  ? "Який графік перебування у дитячому садку Вам зручніше і більше підійде для дитини?: $step3 <br>" : "")
+			. ( $step4  ? "Коли Ви хотіли би почати відвідування садочку?: $step4 <br>" : "");
 	}
 
 	$headers = "MIME-Version: 1.0\r\n";
 	$headers .= "Content-type: text/html; charset=UTF-8\r\n";
-	$headers .= "From: no-reply@mywaypreschool.com"; // Заменить домен на домен клиента
+	$headers .= "From: no-reply@mandryk.kiev.ua"; // Заменить домен на домен клиента
 
 	if (!$title && !$phonenum) {
 	} else {
-		mail($to,"New lead(quiz.mywaypreschool.com)",$message,$headers); // Заменить домен на домен клиента
+		mail($to,"New lead(quiz.mandryk.kiev.ua)",$message,$headers); // Заменить домен на домен клиента
 	}
 ?>

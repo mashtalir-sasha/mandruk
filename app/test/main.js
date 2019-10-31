@@ -165,8 +165,8 @@ $(document).ready(function() {
 						$('.header-line').slideUp(300);
 						$('.progress-line').slideUp(300);
 						//gtag('event','submit',{'event_category':'submit','event_action':'quiz'});
-						//fbq('track', 'Lead');
-						//window.open('http://lp.mywaypreschool.com//', '_blank');
+						fbq('track', 'Lead');
+						//window.open('http://mandryk.kiev.ua/', '_blank');
 					}
 				});
 			}

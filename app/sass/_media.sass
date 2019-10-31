@@ -2,6 +2,15 @@
 
 //Large: ≥992px
 +media-breakpoint-down(lg)
+	.first
+		&-item
+			&__ttl
+				background-size: contain
+				background-repeat: no-repeat
+				background-position: center center
+	.photo
+		&__img
+			margin: 0 auto 20px
 
 //Medium: ≥768px
 +media-breakpoint-down(md)
@@ -15,8 +24,23 @@
 				max-width: 313px
 				span
 					padding: 0 70px
+		&__item
+			margin-bottom: 20px
+			&.i2
+				margin-bottom: 0
 //Small: ≥576px
 +media-breakpoint-down(sm)
+	.head
+		&__name
+			margin: 0 auto 20px
+		&__logo
+			max-width: 180px
+		&-phone
+			display: table
+			float: none
+			margin: 20px auto 0
+			&__link
+				text-align: center
 	.first
 		&-ttl
 			font-size: 28px
@@ -24,11 +48,13 @@
 				font-size: 24px
 			i
 				font-size: 24px
+	.photo
+		padding-top: 50px
+		&__ttl
+			margin-bottom: 40px
 	.main
 		&__ttl
 			font-size: 22px
-		&__subttl
-			font-size: 16px
 		&-list
 			&__li
 				min-height: 92px
@@ -39,8 +65,10 @@
 					margin-bottom: 0
 	.foot
 		&__addr
-			margin-bottom: 20px
+			&:last-child
+				margin-bottom: 20px
 		&__phone
+			text-align: center
 			&:last-child
 				margin-bottom: 20px
 		&-soc
